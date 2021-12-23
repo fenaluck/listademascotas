@@ -1,6 +1,5 @@
 import {Animal} from "./animal.js";
 
-
 export class Mascota extends Animal{
         constructor(Nombre, Direccion, Telefono, Tipo, nomMascota, Enfermedad){
             super(Nombre, Direccion, Telefono,Tipo)

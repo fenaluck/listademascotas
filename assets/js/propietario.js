@@ -1,12 +1,12 @@
 export class Propietario {
-    contructor(Nombre, Direccion, Telefono){
-        this.nombre = Nombre;
-        this.direccion = Direccion;
-        this.telefono = Telefono; 
-        }
+    constructor(Nombre, Direccion, Telefono){
+        this._nombre = Nombre;
+        this._direccion = Direccion;
+        this._telefono = Telefono; 
+    }
         
     datosPropietario(){
-        return `El nombre es: ${this.nombre}, la direccion: ${this.direccion}, el telefono ${this.telefono}`
+        return `El nombre del dueño es: ${this._nombre}, su direccion es: ${this._direccion}, su telefono es: ${this._telefono}`        
     }
 
 }
