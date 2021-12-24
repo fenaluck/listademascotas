@@ -1,7 +1,8 @@
 import {Mascota} from "./mascota.js";
 
 
-    $("form").submit(function (ev){
+$("form").submit(function (ev){
+    ev.preventDefault();
     
         //  creacion de variables
 
@@ -15,12 +16,16 @@ import {Mascota} from "./mascota.js";
 
     //  mostrar resultados
     $("#resultado").show();
+    $("#resultado").html(" ")
     $("#resultado").html(`<li>${mascotaNueva.datosPropietario()}<li>`);
     console.log(mascotaNueva.datosPropietario(), "su mascota es un "+tipo +" y se llama " + nombreMascota + " y viene por " + Enfermedad); 
     
-    ev.preventDefault();
-    
-    });
+    $("#propietario").val('');
+    $("#direccion").val('');
+    $("#telefono").val('');
+    $("#nombreMascota").val('');
+    $("#enfermedad").val('');
+});
     
 
 
